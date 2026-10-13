@@ -1,0 +1,15 @@
+node,left,right
+A,B,C
+B,D,E
+C,F,
+D,H,I
+E,J,K
+F,L,M
+H,,
+I,,
+J,,
+K,,
+L,,
+M,,
+N,,
+O,,
