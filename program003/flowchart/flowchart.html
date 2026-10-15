@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree Program Flowcharts (Traffic Jam Prediction)</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        h1 {
+            color: #1e3a8a;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #1e40af;
+            margin-top: 35px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .flowchart-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            overflow-x: auto;
+            text-align: center;
+        }
+        .img-preview {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #2563eb;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 12px;
+            border: 1px solid #bfdbfe;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Decision Tree Traffic Prediction - Flowcharts</h1>
+        <p>Flowcharts for Assignment 3 (Traffic Jam Prediction using CART Decision Tree) adhering to the strict <strong>Single Return Point</strong> structured pattern.</p>
+
+        <h2>Master Unified Canvas</h2>
+        <div class="flowchart-card">
+            <span class="badge">Master Draw.io Canvas (All 16 Functions)</span><br>
+            <img class="img-preview" src="./flowchart.png" alt="Unified Flowchart">
+        </div>
+
+        <h2>Decision Tree Model Graph</h2>
+        <div class="flowchart-card">
+            <span class="badge">Generated Decision Tree Model</span><br>
+            <img class="img-preview" src="../code/decision_tree.png" alt="Decision Tree Model">
+        </div>
+
+        <h2>1. Main Program Flowchart (<code>main()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./01_main.png" alt="01_main">
+        </div>
+
+        <h2>2. Menu Input (<code>readKey()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./02_readKey.png" alt="02_readKey">
+        </div>
+
+        <h2>3. Menu Dispatcher (<code>process(num)</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./03_process.png" alt="03_process">
+        </div>
+
+        <h2>4. Show Training Data (<code>show_training_data()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./04_show_training_data.png" alt="04_show_training_data">
+        </div>
+
+        <h2>5. Add Training Data (<code>add_training_data()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./05_add_training_data.png" alt="05_add_training_data">
+        </div>
+
+        <h2>6. Edit Training Data (<code>edit_training_data()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./06_edit_training_data.png" alt="06_edit_training_data">
+        </div>
+
+        <h2>7. Search Training Data (<code>search_training_data()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./07_search_training_data.png" alt="07_search_training_data">
+        </div>
+
+        <h2>8. Delete Training Data (<code>delete_training_data()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./08_delete_training_data.png" alt="08_delete_training_data">
+        </div>
+
+        <h2>9. Train Decision Tree (<code>train_decision_tree()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./09_train_decision_tree.png" alt="09_train_decision_tree">
+        </div>
+
+        <h2>10. Build Tree Algorithm (<code>build_tree()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./10_build_tree.png" alt="10_build_tree">
+        </div>
+
+        <h2>11. Gini Impurity Metric (<code>gini_index()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./11_gini_index.png" alt="11_gini_index">
+        </div>
+
+        <h2>12. Best Split Search (<code>get_split()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./12_get_split.png" alt="12_get_split">
+        </div>
+
+        <h2>13. Show Tree Structure (<code>show_tree_structure()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./13_show_tree_structure.png" alt="13_show_tree_structure">
+        </div>
+
+        <h2>14. File IO Operations (<code>load/save data & tree</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./14_file_io.png" alt="14_file_io">
+        </div>
+
+        <h2>15. Test & Predict (<code>test_decision_tree()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./15_test_decision_tree.png" alt="15_test_decision_tree">
+        </div>
+
+        <h2>16. Output & Exit Handler (<code>output()</code>)</h2>
+        <div class="flowchart-card">
+            <img class="img-preview" src="./16_output.png" alt="16_output">
+        </div>
+    </div>
+</body>
+</html>

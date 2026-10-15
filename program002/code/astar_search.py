@@ -47,6 +47,7 @@ def save_file(data):
             neigh_str = ";".join([f"{n}:{d}" for n, d in v['neighbors'].items()])
             f.write(f"{k},{v['x']},{v['y']},{neigh_str},{v['sld']}\n")
     generate_map(data)
+    return None
 
 def load_file():
     data = {}
@@ -236,20 +237,20 @@ def process(num):
     return result
 
 def output(result):
-    if result is None:
-        return
-    if isinstance(result, list) and len(result) >= 3:
-        print("\n" + "=" * 55)
-        print(f"ผลการค้นหา: {result[0]}")
-        if result[0] == "Reachable":
-            print(f"เส้นทางการเสิร์ฟอาหาร: {' -> '.join(result[1])}")
-            print(f"ระยะทางรวม: {result[2]} เมตร")
-            print(f"ลำดับการสำรวจโหนด (Visited): {' -> '.join(result[3])}")
-        print("=" * 55)
-    else:
-        print(result)
-        if result == "ออกจากโปรแกรม":
-            sys.exit()
+    if result is not None:
+        if isinstance(result, list) and len(result) >= 3:
+            print("\n" + "=" * 55)
+            print(f"ผลการค้นหา: {result[0]}")
+            if result[0] == "Reachable":
+                print(f"เส้นทางการเสิร์ฟอาหาร: {' -> '.join(result[1])}")
+                print(f"ระยะทางรวม: {result[2]} เมตร")
+                print(f"ลำดับการสำรวจโหนด (Visited): {' -> '.join(result[3])}")
+            print("=" * 55)
+        else:
+            print(result)
+            if result == "ออกจากโปรแกรม":
+                sys.exit()
+    return None
 
 def main():
     while True:

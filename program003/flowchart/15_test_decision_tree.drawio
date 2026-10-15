@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Antigravity/1.0">
+  <diagram id="page_15_test_decision_tree" name="15_test_decision_tree">
+    <mxGraphModel dx="1030" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_2" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=11;fontStyle=1;" value="test_decision_tree()" vertex="1">
+          <mxGeometry height="36" width="160" x="125" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="result = &quot;Tree not trained yet&quot;" vertex="1">
+          <mxGeometry height="34" width="230" x="90" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c_4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" value="current_tree not None" vertex="1">
+          <mxGeometry height="48" width="210" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="Input weather, time_of_week,&#xa;time_of_day" vertex="1">
+          <mxGeometry height="44" width="210" x="100" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="c_6" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" value="Inputs in valid categories" vertex="1">
+          <mxGeometry height="50" width="230" x="90" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="c_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="pred = predict(current_tree, sample)&#xa;result = f&#39;TrafficJam: {pred}&#39;" vertex="1">
+          <mxGeometry height="48" width="250" x="80" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="c_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="result = &quot;Invalid categories&quot;" vertex="1">
+          <mxGeometry height="34" width="220" x="375" y="333" as="geometry" />
+        </mxCell>
+        <mxCell id="c_9" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="200" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="c_10" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=11;fontStyle=1;" value="return result" vertex="1">
+          <mxGeometry height="36" width="140" x="135" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="e_11" edge="1" parent="1" source="c_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_12" edge="1" parent="1" source="c_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_13" edge="1" parent="1" source="c_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c_9" value="no">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="204" />
+              <mxPoint x="40" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_14" edge="1" parent="1" source="c_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_5" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_15" edge="1" parent="1" source="c_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_16" edge="1" parent="1" source="c_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_7" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_17" edge="1" parent="1" source="c_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_18" edge="1" parent="1" source="c_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c_8" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_19" edge="1" parent="1" source="c_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c_9" value="">
+          <mxGeometry relative="1" x="0.1382" as="geometry" />
+        </mxCell>
+        <mxCell id="e_20" edge="1" parent="1" source="c_9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

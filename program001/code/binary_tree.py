@@ -46,6 +46,7 @@ def save_file(data):
             left = children[0] if len(children) > 0 else ""
             right = children[1] if len(children) > 1 else ""
             f.write(f"{k},{left},{right}\n")
+    return None
 
 graph = load_file()
 
@@ -168,18 +169,18 @@ def process(num):
     return result
 
 def output(result):
-    if result is None:
-        return
-    if isinstance(result, list) and len(result) == 2 and isinstance(result[1], list):
-        print(result[0])
-        print("Path used to traverse :", end=" ")
-        for x in result[1]:
-            print(x, end=" ")
-        print()
-    else:
-        print(result)
-        if result == "ออกจากโปรแกรม":
-            sys.exit()
+    if result is not None:
+        if isinstance(result, list) and len(result) == 2 and isinstance(result[1], list):
+            print(result[0])
+            print("Path used to traverse :", end=" ")
+            for x in result[1]:
+                print(x, end=" ")
+            print()
+        else:
+            print(result)
+            if result == "ออกจากโปรแกรม":
+                sys.exit()
+    return None
 
 def main():
     while True:

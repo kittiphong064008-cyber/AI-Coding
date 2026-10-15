@@ -1,0 +1,26 @@
+{
+  "index": 1,
+  "value": "Workday",
+  "left": {
+    "index": 0,
+    "value": "Clear",
+    "left": {
+      "index": 2,
+      "value": "Lunch",
+      "left": "No",
+      "right": "Yes"
+    },
+    "right": "Yes"
+  },
+  "right": {
+    "index": 0,
+    "value": "Snowy",
+    "left": {
+      "index": 2,
+      "value": "Lunch",
+      "left": "No",
+      "right": "Yes"
+    },
+    "right": "No"
+  }
+}

@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Antigravity/1.0">
+  <diagram id="page_04_show_training_data" name="04_show_training_data">
+    <mxGraphModel dx="1030" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_2" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=11;fontStyle=1;" value="show_training_data()" vertex="1">
+          <mxGeometry height="36" width="160" x="110" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="result = &quot;No data available&quot;" vertex="1">
+          <mxGeometry height="34" width="210" x="85" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c_4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" value="dataset not empty" vertex="1">
+          <mxGeometry height="46" width="180" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="c_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="lines = [header]" vertex="1">
+          <mxGeometry height="34" width="130" x="125" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="c_6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="185" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="c_7" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" value="For each row in dataset" vertex="1">
+          <mxGeometry height="48" width="190" x="95" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="c_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="Format row (Weather, Time, ...)&#xa;lines.append(row)" vertex="1">
+          <mxGeometry height="40" width="220" x="80" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="c_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=10.5;" value="result = &quot;\n&quot;.join(lines)" vertex="1">
+          <mxGeometry height="36" width="170" x="105" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="185" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c_11" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Segoe UI;fontSize=11;fontStyle=1;" value="return result" vertex="1">
+          <mxGeometry height="36" width="140" x="120" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="e_12" edge="1" parent="1" source="c_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_13" edge="1" parent="1" source="c_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_14" edge="1" parent="1" source="c_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_5" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_15" edge="1" parent="1" source="c_5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_16" edge="1" parent="1" source="c_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_17" edge="1" parent="1" source="c_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_8" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_18" edge="1" parent="1" source="c_8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c_6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="435" />
+              <mxPoint x="60" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_19" edge="1" parent="1" source="c_7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c_9" value="no">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="359" />
+              <mxPoint x="310" y="508" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_20" edge="1" parent="1" source="c_9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_21" edge="1" parent="1" source="c_4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="c_10" value="no">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="203" />
+              <mxPoint x="350" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_22" edge="1" parent="1" source="c_10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=classic;endFill=1;fontColor=#000000;fontFamily=Segoe UI;fontSize=10;" target="c_11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
